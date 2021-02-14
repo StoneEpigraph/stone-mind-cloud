@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/smt-common/pom.xml" />
+        <option value="$PROJECT_DIR$/smt-generate/pom.xml" />
+        <option value="$PROJECT_DIR$/stone-mind/pom.xml" />
+        <option value="$PROJECT_DIR$/smt-server/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

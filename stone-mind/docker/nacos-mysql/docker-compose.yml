@@ -1,0 +1,41 @@
+version: '3.1'
+services:
+  db:
+    image: nacos/nacos-mysql:8.0.16
+    container_name: nacos-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: qepflangy
+      MYSQL_USER: stone
+      MYSQL_PASSWORD: qepflangy
+      MYSQL_DATABASE: nacos
+      TZ: Asia/Shanghai
+    volumes:
+      - ./datadir:/var/lib/mysql
+    ports:
+      - 23306:3306
+  nacos:
+    image: nacos/nacos-server
+    container_name: nacos-nacos
+    restart: always
+    depends_on:
+      - db
+    environment:
+      PREFER_HOST_NAME: hostname
+      SPRING_DATASOURCE_PLATFORM: mysql
+      MODE: standalone
+      MYSQL_SERVICE_HOST: nacos-mysql
+      MYSQL_SERVICE_DB_NAME: nacos
+      MYSQL_SERVICE_PORT: 3306
+      MYSQL_SERVICE_USER: stone
+      MYSQL_SERVICE_PASSWORD: qepflangy
+      JVM_XMS: 512M
+      JVM_MMS: 256M
+    volumes:
+      - ./nacos/logs/:/home/nacos/logs
+      - ./nacos/plugins/:/home/nacos/plugins
+      - ./nacos/conf/custom.properties:/home/nacos/conf/custom.properties
+    ports:
+      - "9999:8848"
+      - "9898:9555"
+      

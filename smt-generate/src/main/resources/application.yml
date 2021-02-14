@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: smt-generate
+  profiles:
+    active: dev
+  freemarker:
+    template-loader-path: classpath:/templates
