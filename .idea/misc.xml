@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/smt-generate/pom.xml" />
         <option value="$PROJECT_DIR$/stone-mind/pom.xml" />
         <option value="$PROJECT_DIR$/smt-server/pom.xml" />
+        <option value="$PROJECT_DIR$/smt-server/smt-server-base/pom.xml" />
       </list>
     </option>
   </component>

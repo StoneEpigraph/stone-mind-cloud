@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/smt-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smt-generate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smt-server/smt-server-base/src/main/java" charset="UTF-8" />
   </component>
 </project>

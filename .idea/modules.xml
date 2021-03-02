@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/smt-common/smt-common.iml" filepath="$PROJECT_DIR$/smt-common/smt-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/smt-generate/smt-generate.iml" filepath="$PROJECT_DIR$/smt-generate/smt-generate.iml" />
       <module fileurl="file://$PROJECT_DIR$/smt-server/smt-server.iml" filepath="$PROJECT_DIR$/smt-server/smt-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smt-server/smt-server-base/smt-server-base.iml" filepath="$PROJECT_DIR$/smt-server/smt-server-base/smt-server-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/stone-mind/stone-mind.iml" filepath="$PROJECT_DIR$/stone-mind/stone-mind.iml" />
     </modules>
   </component>

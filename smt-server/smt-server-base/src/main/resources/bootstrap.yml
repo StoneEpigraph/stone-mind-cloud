@@ -1,0 +1,25 @@
+server:
+  port: 6010
+  context-path: /
+  servlet:
+    tomcat:
+      # tomcat的URI编码
+      uri-encoding: UTF-8
+spring:
+  profiles:
+    active: dev
+  application:
+    name: smt-server-base
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.url}:9999
+        file-extension: yaml
+        prefix: smt-server-base
+        endpoint:
+      discovery:
+        server-addr: ${nacos.url}:9999
+logging:
+  level:
+    cn.stonemind: debug
+    org.springframework: warn
