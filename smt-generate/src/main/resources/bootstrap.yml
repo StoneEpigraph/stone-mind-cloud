@@ -5,3 +5,12 @@ spring:
     active: dev
   freemarker:
     template-loader-path: classpath:/templates
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:9999
+        group: DEFAULT_GROUP
+        prefix: smt-server-generate
+        file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:9999

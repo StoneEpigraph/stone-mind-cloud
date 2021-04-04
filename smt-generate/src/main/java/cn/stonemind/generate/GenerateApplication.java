@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("cn.stonemind.generate.mapper")
+//@NacosPropertySource(dataId = "smt-server-base-dev.yml", autoRefreshed = true)
 public class GenerateApplication {
 
 	public static void main(String[] args) {

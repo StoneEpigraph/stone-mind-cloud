@@ -21,17 +21,17 @@ public class UserServiceImpl implements UserService {
         List<User> userList = new ArrayList<>();
 
         User user1 = new User();
-        user1.setId(UUID.randomUUID().toString());
+        user1.setUserid(UUID.randomUUID().toString());
         user1.setUsername("zhangsan");
         user1.setPassword("123qweASD");
 
         User user2 = new User();
-        user2.setId(UUID.randomUUID().toString());
+        user2.setUserid(UUID.randomUUID().toString());
         user2.setUsername("zhangsan");
         user2.setPassword("123qweASD");
 
         User user3 = new User();
-        user3.setId(UUID.randomUUID().toString());
+        user3.setUserid(UUID.randomUUID().toString());
         user3.setUsername("zhangsan");
         user3.setPassword("123qweASD");
         userList.add(user1);

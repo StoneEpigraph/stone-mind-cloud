@@ -84,4 +84,14 @@ public class UserController {
 
         return res;
     }
+
+    @PostMapping("/randomStr")
+    public String randomStr(HttpServletRequest request) throws Exception {
+        return "123123sdfasfasdf==";
+    }
+
+    @PostMapping("/serverVerifyUrl")
+    public String serverVerifyUrl(HttpServletRequest request) throws Exception {
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><verifyidentityticketresp version=\"1\"><result>-1</result><identityticket>123123123</identityticket><appserverid>\"123123\"</appserverid></verifyidentityticketresp>";
+    }
 }
